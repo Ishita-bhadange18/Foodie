@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid;
+    font-family: Corbel;
+}
+header{
+    padding: 0px 30px;
+    height: 80px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e2e2e2;
+}
+header h1 span{
+    display: block;
+    font-size: 12px;
+    color: orange;
+}
+header nav{
+    display: none;
+}
+header .fa-bars{
+    font-size: 24px;
+}
+.hero{
+    border: 1px solid #e2e2e2;
+    background: url(../images/background/header_background.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.hero h2{
+    margin: 150px 0px 0px 0px;
+}
+.hero .hero_inner{
+    /* border: 1px solid; */
+    margin: 100px 0px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px 0px;
+}
+.hero_inner div{
+    width: 100%;
+    /* border: 1px solid; */
+    padding: 10px;
+}
+.hero_inner div img{
+    border: 5px solid white;
+    border-radius: 100%;
+}
+.hero_inner div h3{
+    margin: 20px 0px;
+}
+.hero button,.products_inner div button,.news form input[type="submit"]{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: orange;
+    border: 1px solid;
+}
+.hero button{
+    margin: 30px 0px;
+}
+.products{
+    border: 1px solid #e2e2e2;
+    background: #e2e2e2;
+}
+.products h2,.menu h2{
+    margin: 100px 0px 0px 0px;
+    text-align: center;
+}
+.products_inner,.menu_inner{
+    /* border: 1px solid; */
+    margin: 60px 0px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px 0px;
+}
+.products_inner div,.menu_inner div{
+    width: 100%;
+    border: 1px solid #a8a7a7;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu_inner div{
+    border: none;
+}
+.menu_inner div ul li{
+    list-style-position: inside;
+}
+.products_inner div img{
+    width: 100%;
+}
+.products_inner div p{
+    margin: 20px 0px;
+}
+.news,footer{
+    height: 400px;
+    /* border: 1px solid; */
+    background: url(../images/background/footer_background.png) no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px 0px;
+}
+.news form input[type="email"]{
+    padding: 9px 0px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background:rgba(255, 255, 255, 0.7);
+}
+.menu{
+    border: 1px solid orange;
+    background-color: orange;
+    text-align: center;
+}
+footer{
+    height: 300px;
+}
+footer span{
+    color: orange;
+}
+
+@media only screen and (min-width:768px){
+    .hero_inner div,.products_inner div,.menu_inner div{
+        width: 32%;
+    }
+    .news p,footer p{
+        width: 60%;
+    }
+} 
+@media only screen and (min-width:992px){
+    header nav{
+        display: block;
+    }
+    header nav ul li{
+        display: inline-block;
+        margin: 0px 10px;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    header .fa-bars{
+        display: none;
+    }
+}
+@media only screen and (min-width:1200px){
+    .hero .hero_inner,.products_inner,.menu_inner{
+        width: 70%;
+        margin: 100px auto;
+    }
+    .products_inner,.menu_inner{
+        margin: 60px auto;
+    }
+    .news p,footer p{
+        width: 40%;
+    }
+}
