@@ -5,7 +5,7 @@
 
 -- **Html**
  
- - basic html tag like <h2> tag, <a> tag ,div ,sections,table tag ,form tag,imag tag
+ - basic html tag like <h2> tag, <a> tag ,div ,sections,table tag ,form tag,img tag
  - using this tag . i made a proper web site structure
    
 -- **CSS**
